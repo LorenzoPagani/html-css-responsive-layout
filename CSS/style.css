@@ -1,3 +1,5 @@
+/* generic */
+
 .debug {
     min-height: 200px;
     background-color: orange;
@@ -14,10 +16,38 @@ p {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 /* header */
 
+header {
+    background-color: #0084FD;
+}
+
+.logo, 
+.navsec,
+.bars  {
+    padding: 2em 0;
+    margin: 0 1em;
+}
+
+.fa-bars {
+    font-size: 2em;
+    margin: 0 1em 0 0;
+}
 .navsec {
     display: none;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.navsec.started {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: .4em .8em;
 }
 
 /* media queries */
