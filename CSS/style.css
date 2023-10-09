@@ -22,6 +22,8 @@ p {
 
 /* media queries */
 
+/*** TABLET VERSION  ***/
+
 @media screen and (min-width: 768px) {
 
     #demo-app,
@@ -60,6 +62,9 @@ p {
     }
 }
 
+
+/*** DESKTOP VERSION  ***/
+
 @media screen and (min-width: 1100px) {
     .container {
         width: 70%;
@@ -77,6 +82,17 @@ p {
         display: none;
     }
 
+    /* planning */
+
+    #planning {
+        display: flex;
+    }
+    .plan-wrapper {
+        width: 50%;
+    }
+    .plan-wrapper.right {
+        padding-top: 5em;
+    }
     /* benefit */
 
     .benefit-card {
