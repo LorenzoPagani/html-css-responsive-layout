@@ -5,35 +5,20 @@
     font-size: 2.5vh;
 }
 
-h1 {
-    font-size: 2em;
-}
+h1 {font-size: 2em;}
 
-h2 {
-    font-size: 1.5em;
-}
+h2 {font-size: 1.5em;}
 
-h3 {
-    font-size: 1.17em;
-}
+h3 {font-size: 1.17em;}
 
-h5 {
-    font-size: .83em;
-}
+h5 {font-size: .83em;}
 
-h6 {
-   font-size: .67em; 
-}
+h6 {font-size: .67em;}
 
-.f-hei-1 {
-    min-height: 50px;
-}
-.f-hei-2 {
-    min-height: 100px;
-}
-.f-hei-3 {
-    min-height: 200px;
-}
+.f-hei-1 {min-height: 50px;}
+.f-hei-2 {min-height: 100px;}
+.f-hei-3 {min-height: 200px;}
+
 /*** display ***/
 
 /*** POSITION ***/
@@ -67,6 +52,16 @@ h6 {
 .w-100 { width: 100%; }
 
 /*** PADDINGS ***/
+
+
+.p-2em { padding: 2em; }
+.pt-2em { padding-top: 2em; }
+.pr-2em { padding-right: 2em; }
+.pb-2em { padding-bottom: 2em; }
+.pl-2em { padding-left: 2em; }
+.py-2em { padding: 2em 0; }
+.px-2em { padding: 0 2em; }
+
 .p-8 { padding: 8px; }
 .pt-8 { padding-top: 8px; }
 .pr-8 { padding-right: 8px; }
@@ -123,6 +118,14 @@ h6 {
 .ml-32 { margin-left: 32px; }
 .my-32 { margin: 32px 0; }
 .mx-32 { margin: 0 32px; }
+
+.m-2em { margin: 2em; }
+.mt-2em { margin-top: 2em; }
+.mr-2em { margin-right: 2em; }
+.mb-2em { margin-bottom: 2em; }
+.ml-2em { margin-left: 2em; }
+.my-2em { margin: 2em 0; }
+.mx-2em { margin: 0 2em; }
 
 .m-64 { margin: 64px; }
 .mt-64 { margin-top: 64px; }

@@ -1,7 +1,7 @@
 .debug {
     min-height: 200px;
     background-color: orange;
-    margin: 32px;
+    margin: 2em;
     display: block;
 }
 
@@ -10,5 +10,38 @@ h2,
 h3,
 h4,
 p {
-    margin: 32px;
+    margin: 2em;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    #demo-app,
+    #benefits,
+    #about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    #demo-app .demo-card {
+        width: calc(100% / 3 - 4em);
+        background-color: green;
+    }
+
+    #demo-app .demo-card.large {
+        width: calc((100% / 3 - 2em) * 2);
+    }
+
+    #benefit-title {
+        width: calc(100% - 4em);
+    }
+
+    .benefit-card {
+        width: calc(100% / 2 - 4em);
+    }
+
+    .about-container {
+        width: 50%;
+    }
 }
