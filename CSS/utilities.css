@@ -20,6 +20,8 @@ h6 {font-size: .67em;}
 .f-hei-3 {min-height: 200px;}
 
 /*** display ***/
+.d-none {display: none;}
+.d-block {display: block;}
 
 /*** POSITION ***/
 
@@ -61,6 +63,14 @@ h6 {font-size: .67em;}
 .pl-2em { padding-left: 2em; }
 .py-2em { padding: 2em 0; }
 .px-2em { padding: 0 2em; }
+
+.p-5em { padding: 5em; }
+.pt-5em { padding-top: 5em; }
+.pr-5em { padding-right: 5em; }
+.pb-5em { padding-bottom: 5em; }
+.pl-5em { padding-left: 5em; }
+.py-5em { padding: 5em 0; }
+.px-5em { padding: 0 5em; }
 
 .p-8 { padding: 8px; }
 .pt-8 { padding-top: 8px; }
