@@ -30,7 +30,7 @@ h2 {
 }
 h3 {
     text-align: center;
-    color: var(--primary-color);
+    font-size: 2em;
 }
 
 p {
@@ -95,6 +95,7 @@ header {
 
 .demo.card h3 {
     font-size: 1.6em;
+    color: var(--primary-color);
 }
 
 .demo.card > i {
@@ -128,6 +129,38 @@ header {
     padding: 1em;
 }
 
+/* testimonials */
+#testimonial  {
+    text-align: center;
+}
+
+#testimonial h2 {
+    color: var(--secondary-color);
+}
+
+.testimonial.card {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.testimonial.card i {
+    margin: .3em;
+}
+
+.testimonial-pic {
+    width: 45%;
+    border-radius: 50%; 
+    margin: 1em;
+}
+.testimonial-pic img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.testimonial.card H3 {
+    color: white;
+}
 /* media queries */
 
 /*************************************************
