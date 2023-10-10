@@ -1,10 +1,16 @@
 /* generic */
+:root {
+    --primary-color: #0084FD;
+    --primary-color-light: #B5DDFF;
+    --secondary-color: #9792E4;
+    --third-color: #FDC15F;
+}
 
 .debug {
     min-height: 200px;
-    background-color: orange;
-    margin: 2em;
+    margin: 1em;
     display: block;
+    border: 1px solid black;
 }
 
 h1,
@@ -12,34 +18,54 @@ h2,
 h3,
 h4,
 p {
-    margin: 2em;
-    text-align: center;
+    margin: 1em;
+    padding: 1em 0;
+    line-height: 190%;
 }
 
+h3 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.2em;
+    color: #607688;
+}
 a {
     text-decoration: none;
     color: white;
 }
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1em 2em;
+    margin: 2em;
+}
+
 /* header */
 
 header {
     background-color: #0084FD;
 }
 
-.logo, 
+.logo,
 .navsec,
-.bars  {
+.bars {
     padding: 2em 0;
     margin: 0 1em;
 }
 
 .fa-bars {
     font-size: 2em;
-    margin: 0 1em 0 0;
 }
+
 .navsec {
     display: none;
-    font-size: 2em;
+    font-size: 1.4em;
     font-weight: 100;
 }
 
@@ -50,9 +76,32 @@ header {
     padding: .4em .8em;
 }
 
+/* demo app */
+
+.demo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B5DDFF;
+    margin: 1em;
+    border-radius: 20px;
+}
+
+.demo-card h3 {
+    font-size: 1.6em;
+}
+
+.demo-card > i {
+    font-size: 4em;
+    color: var(--primary-color);
+    margin: 1em;
+}
+
 /* media queries */
 
-/*** TABLET VERSION  ***/
+/*************************************************
+                TABLET VERSION
+*************************************************/
 
 @media screen and (min-width: 768px) {
 
@@ -67,22 +116,22 @@ header {
     /* Demo app */
 
     #demo-app .demo-card {
-        width: calc(100% / 3 - 4em);
-        background-color: green;
+        width: calc(100% / 3 - 2em);
+        
     }
 
     #demo-app .demo-card.large {
-        width: calc((100% / 3 - 2em) * 2);
+        width: calc((100% / 3 - 1em) * 2);
     }
 
     /* benefit */
 
     #benefit-title {
-        width: calc(100% - 4em);
+        width: calc(100% - 2em);
     }
 
     .benefit-card {
-        width: calc(100% / 2 - 4em);
+        width: calc(100% / 2 - 2em);
     }
 
     /* about */
@@ -93,7 +142,10 @@ header {
 }
 
 
-/*** DESKTOP VERSION  ***/
+/*************************************************
+                DESKTOP VERSION
+*************************************************/
+
 
 @media screen and (min-width: 1100px) {
     .container {
@@ -117,15 +169,18 @@ header {
     #planning {
         display: flex;
     }
+
     .plan-wrapper {
         width: 50%;
     }
+
     .plan-wrapper.right {
         padding-top: 5em;
     }
+
     /* benefit */
 
     .benefit-card {
-        width: calc(100% / 3 - 4em);
+        width: calc(100% / 3 - 2em);
     }
 }
