@@ -12,7 +12,10 @@
     display: block;
     border: 1px solid black;
 }
-
+.bg-primary {background-color: #0084FD;}
+.bg-primary-light {background-color: var(--primary-color-light);}
+.bg-secondary {background-color: var(--secondary-color);}
+.bg-third {background-color: var(--third-color);}
 h1,
 h2,
 h3,
@@ -22,7 +25,9 @@ p {
     padding: 1em 0;
     line-height: 190%;
 }
-
+h2 {
+    font-size: 2.5em;
+}
 h3 {
     text-align: center;
     color: var(--primary-color);
@@ -30,7 +35,6 @@ h3 {
 
 p {
     font-size: 1.2em;
-    color: #607688;
 }
 a {
     text-decoration: none;
@@ -46,6 +50,13 @@ a {
     margin: 2em;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    border-radius: 20px;
+}
 /* header */
 
 header {
@@ -78,23 +89,43 @@ header {
 
 /* demo app */
 
-.demo-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.demo.card {
     background-color: #B5DDFF;
-    margin: 1em;
-    border-radius: 20px;
 }
 
-.demo-card h3 {
+.demo.card h3 {
     font-size: 1.6em;
 }
 
-.demo-card > i {
+.demo.card > i {
     font-size: 4em;
     color: var(--primary-color);
     margin: 1em;
+}
+
+.demo.card p {
+    color: #607688;
+}
+
+/* planning */
+
+.plan-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan.card {
+    background-color: white;
+}
+.plan.card p {
+    font-style: italic;
+}
+
+.plan.card .button {
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 1em;
 }
 
 /* media queries */
