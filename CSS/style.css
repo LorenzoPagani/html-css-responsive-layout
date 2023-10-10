@@ -188,6 +188,21 @@ header {
         width: calc((100% / 3 - 1em) * 2);
     }
 
+    /* testimonial */
+
+    .testimonial.card {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .testimonial-pic {
+        width: 25%;
+    }
+
+    .testimonial-text {
+        width: 60%;
+    }
+
     /* benefit */
 
     #benefit-title {
