@@ -4,18 +4,45 @@
     --primary-color-light: #B5DDFF;
     --secondary-color: #9792E4;
     --third-color: #FDC15F;
+    --footer-black: #333333;
 }
 
-.debug {
-    min-height: 200px;
-    margin: 1em;
-    display: block;
-    border: 1px solid black;
+.bg-primary {
+    background-color: #0084FD;
 }
-.bg-primary {background-color: #0084FD;}
-.bg-primary-light {background-color: var(--primary-color-light);}
-.bg-secondary {background-color: var(--secondary-color);}
-.bg-third {background-color: var(--third-color);}
+
+.bg-primary-light {
+    background-color: var(--primary-color-light);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-third {
+    background-color: var(--third-color);
+}
+
+.bg-footer {
+    background-color: var(--footer-black);
+}
+
+.col-primary {
+    color: #0084FD;
+}
+
+.col-primary-light {
+    color: var(--primary-color-light);
+}
+
+.col-secondary {
+    color: var(--secondary-color);
+}
+
+.col-third {
+    color: var(--third-color);
+}
+
 h1,
 h2,
 h3,
@@ -25,9 +52,11 @@ p {
     padding: 1em 0;
     line-height: 190%;
 }
+
 h2 {
     font-size: 2.5em;
 }
+
 h3 {
     text-align: center;
     font-size: 2em;
@@ -36,6 +65,7 @@ h3 {
 p {
     font-size: 1.2em;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -57,6 +87,7 @@ a {
     margin: 1em;
     border-radius: 20px;
 }
+
 /* header */
 
 header {
@@ -98,7 +129,7 @@ header {
     color: var(--primary-color);
 }
 
-.demo.card > i {
+.demo.card>i {
     font-size: 4em;
     color: var(--primary-color);
     margin: 1em;
@@ -115,9 +146,11 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
 .plan.card {
     background-color: white;
 }
+
 .plan.card p {
     font-style: italic;
 }
@@ -127,10 +160,11 @@ header {
     background-color: var(--secondary-color);
     color: black;
     padding: 1em;
+    aspect-ratio: 1 / 1;
 }
 
 /* testimonials */
-#testimonial  {
+#testimonial {
     text-align: center;
 }
 
@@ -142,15 +176,18 @@ header {
     background-color: var(--secondary-color);
     color: white;
 }
+
 .testimonial.card i {
-    margin: .3em;
+    margin: 8px;
+    font-size: 1.5em;
 }
 
 .testimonial-pic {
     width: 45%;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin: 1em;
 }
+
 .testimonial-pic img {
     width: 100%;
     border-radius: 50%;
@@ -161,6 +198,108 @@ header {
 .testimonial.card H3 {
     color: white;
 }
+
+/* benefits */
+
+.benefit.card {
+    background-color: white;
+    color: var(--secondary-color);
+    align-items: flex-start;
+}
+
+.benefit.card * {
+    margin: .5em;
+    padding: .5em;
+}
+
+.benefit.card p {
+    color: #607688;
+}
+
+.benefit.card .button {
+    color: white;
+    background-color: #9792E4;
+    padding: 1em 2em;
+    margin: 2em;
+}
+
+/* About */
+
+.quote.card .button {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.quote-pic {
+    width: 60%;
+    border-radius: 50%;
+    margin: 1em;
+    position: relative;
+}
+
+.quote-pic img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.quote-pic i {
+    position: absolute;
+    left: 75%;
+    top: 5%;
+    font-size: 6em;
+    color: var(--secondary-color);
+}
+
+.about-container,
+.about-container h3,
+.about-container .button {
+    text-align: left;
+}
+
+/* get started */
+
+#get-started {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#get-started h4 {
+    color: #607688;
+}
+
+#get-started h3,
+#get-started p {
+    color: white;
+}
+
+#get-started h2 {
+    color: var(--third-color);
+    font-size: 6em;
+    margin: 0;
+    padding: 0;
+}
+
+#get-started h2 {
+    color: var(--third-color);
+}
+
+#get-started .button {
+    color: var(--secondary-color);
+    background-color: white;
+    display: inline-block;
+    width: 60%;
+    max-width: 220px
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
 /* media queries */
 
 /*************************************************
@@ -179,12 +318,12 @@ header {
 
     /* Demo app */
 
-    #demo-app .demo-card {
+    #demo-app .demo.card {
         width: calc(100% / 3 - 2em);
-        
+
     }
 
-    #demo-app .demo-card.large {
+    #demo-app .demo.card.large {
         width: calc((100% / 3 - 1em) * 2);
     }
 
@@ -209,15 +348,17 @@ header {
         width: calc(100% - 2em);
     }
 
-    .benefit-card {
+    .benefit.card {
         width: calc(100% / 2 - 2em);
     }
+
 
     /* about */
 
     .about-container {
         width: 50%;
     }
+
 }
 
 
@@ -244,8 +385,8 @@ header {
     }
 
     /* planning */
-
     #planning {
+
         display: flex;
     }
 
@@ -259,7 +400,11 @@ header {
 
     /* benefit */
 
-    .benefit-card {
+    .benefit.card {
         width: calc(100% / 3 - 2em);
+    }
+
+    #get-started {
+        width: 30%;
     }
 }
